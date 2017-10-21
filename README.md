@@ -1,2 +1,2 @@
 # code-practice
-Set of coding problems with an "optimal" progression of difficulty to maximize learning
+Set of coding problems with a progression of difficulty to maximize learning
