@@ -17,17 +17,28 @@ if num is positive:
 
 ```Java
 class Boolean1 {
-    
-    public static isPositive(int num){
+
+    public static boolean isPositive(int num) {
+
 
     }
 
 
-
-
+    
     public static void main(String[] args) {
         int[] ints = {-4, 0, 10};
-        
+
+        if (isPositive(ints[0])){
+            System.out.println("incorrect");
+        }
+        if (isPositive(ints[1])){
+            System.out.println("incorrect");
+        }
+        if (!isPositive(ints[2])){
+            System.out.println("incorrect");
+        }
+
+        System.out.println("Correct!");
         
     }
 }

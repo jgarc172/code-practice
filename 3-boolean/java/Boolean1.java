@@ -2,6 +2,9 @@ class Boolean1 {
     public static boolean isPositive(int num) {
         return num > 0;
     }
+
+
+    
     public static void main(String[] args) {
         int[] ints = {-4, 0, 10};
 
