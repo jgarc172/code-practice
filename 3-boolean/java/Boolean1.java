@@ -17,14 +17,18 @@ class Boolean1 {
 
         Test[] tests = { new Test(-4, false), new Test(0, false), new Test(10, true) };
 
+        System.out.println();
         for (Test test : tests) {
             boolean result = isPositive(test.input);
-            System.out.printf("isPositive(%d)\t->\t %b ", test.input, result);
+            String output = String.format("isPositive(%d) \t ->  %b ", test.input, result);
+
             if (result == test.expected){
-                System.out.println("\t(OK)");
+                output += "\t (OK)";
             } else {
-                System.out.printf("\t(X) expected %b %n", test.expected);
+                output += String.format("\t(X) expected %b %n", test.expected);
             }
+
+            System.out.println(output);
         }
 
     }
