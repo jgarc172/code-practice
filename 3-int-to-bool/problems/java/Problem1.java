@@ -1,7 +1,10 @@
-class Boolean1 {
+class Problem1 {
+
+    // implement this method
     public static boolean isPositive(int num) {
-        return num > 0;
+        return false;
     }
+
 
     public static void main(String[] args) {
 
@@ -23,7 +26,7 @@ class Boolean1 {
             if (result == test.expected){
                 output += "\t (OK)";
             } else {
-                output += String.format("\t(X) expected %b %n", test.expected);
+                output += String.format("\t (X) expected %b %n", test.expected);
             }
 
             System.out.println(output);
