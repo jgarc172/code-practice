@@ -5,18 +5,16 @@ class Boolean1 {
 
     public static void main(String[] args) {
 
-        class Test {
-            int input;
-            boolean expected;
+        Test[] tests = {
+            new Test(-4, false), 
+            new Test(0, false), 
+            new Test(10, true)
+            };
+        
+        runTests(tests);
+    }
 
-            Test(int input, boolean expected) {
-                this.input = input;
-                this.expected = expected;
-            }
-        }
-
-        Test[] tests = { new Test(-4, false), new Test(0, false), new Test(10, true) };
-
+    public static void runTests(Test[] tests){
         System.out.println();
         for (Test test : tests) {
             boolean result = isPositive(test.input);
@@ -30,6 +28,16 @@ class Boolean1 {
 
             System.out.println(output);
         }
-
     }
+
+        static class Test {
+            int input;
+            boolean expected;
+
+            Test(int input, boolean expected) {
+                this.input = input;
+                this.expected = expected;
+            }
+        }
+
 }
