@@ -12,7 +12,7 @@ the main method:
 
     invoke();
 
-```Java
+```Java runnable
 class OneFunction {
     
     // function invoke
