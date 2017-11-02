@@ -47,8 +47,9 @@ execute nothing:
 ```
 The above is typically executed with the following **Python** commands when the code is saved in the 'execute.py` file:
 
-```
+```bash
 $ python execute.py
+$
 ```
 
 # JavaScript
@@ -60,6 +61,7 @@ execute nothing:
 ```
 The above is typically executed in a browser or with the following **node** commands when the code is saved in the 'execute.js` file:
 
-```
+```bash
 $ node execute.js
+$
 ```
