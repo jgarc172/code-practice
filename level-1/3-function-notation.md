@@ -33,17 +33,18 @@ func isPositive(num int) bool {
 ```
 
 # Python
-In Python, the function signature will look like this:
+In Python, the function signature will look like this with a comment to document the intended signature:
 
 ```python
 def isPositive(num):
-
+    # int -> bool
 ```
 
 # JavaScript
-In JavaScript, the function signature will look like this:
+In JavaScript, the function signature will look like this with a comment to document the intended signature:
 
 ```javascript runnable
 function isPositive(num){
+    // number -> boolean
 }
 ```
