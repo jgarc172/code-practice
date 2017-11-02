@@ -39,7 +39,7 @@ $
 ```
 
 # Python
-In Python, we can write the following code and be able to execute it.  Since the file is empty of Python commands, it will 
+In Python, we can write the following code and be able to execute it.  Since the file is empty of Python code, it will 
 execute nothing:
 
 ```python runnable
@@ -52,7 +52,7 @@ $ python execute.py
 ```
 
 # JavaScript
-In JavaScript, we can write the following code and be able to execute it.  Since the file is empty of Python commands, it will 
+In JavaScript, we can write the following code and be able to execute it.  Since the file is empty of JavaScripts code, it will 
 execute nothing:
 
 ```javascript runnable
