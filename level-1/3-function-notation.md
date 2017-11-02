@@ -6,7 +6,7 @@ Define a notation for the function signature that will be used in the exercises.
 The following notation will be used for all the exercises and will be translated to their respective programming language:
 
 ```
-name of function: list of input parameter types -> returned type
+name of function: type1, type2, ... -> returned type
 ```
 
 ## Example
