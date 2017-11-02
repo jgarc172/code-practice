@@ -7,7 +7,7 @@ respective runtime.  The program should do "nothing".
 In Java, we can write the following code and be able to execute it:
 
 ```java runnable
-class Execute {
+class Main {
     public static void main(String[] args) {
         
     }
