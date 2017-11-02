@@ -44,6 +44,6 @@ def isPositive(num):
 In JavaScript, the function signature will look like this:
 
 ```javascript runnable
-function isPositive(){
+function isPositive(num){
 }
 ```
