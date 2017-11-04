@@ -21,6 +21,7 @@ In Java, the method signature will look like this:
 
 ```java
 boolean isPositive(int num){
+
 }
 ```
 
@@ -29,6 +30,7 @@ In Go, the function signature will look like this:
 
 ```go
 func isPositive(num int) bool {
+
 }
 ```
 
@@ -46,5 +48,6 @@ In JavaScript, the function signature will look like this with a comment to docu
 ```javascript runnable
 function isPositive(num){
     // number -> boolean
+
 }
 ```
