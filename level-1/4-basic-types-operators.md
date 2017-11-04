@@ -21,7 +21,7 @@ the reverse of its value:
 
 Example:
 ```
-not(true)  -> false<br>
+not(true)  -> false
 not(false) -> true
 ```
 
