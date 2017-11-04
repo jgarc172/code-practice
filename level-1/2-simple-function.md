@@ -1,10 +1,10 @@
-# Problem
+# Invoking a Simple Function
 
-Demonstrate the use of a simple function (or a method).  
+The practice exercises will consist of implementing a single method.  Before we go into the exercises, let's demonstrate the 
+implementation of a simple function.
 
-## Solution
-The minimalist function or method that can be invoked is one defined as taking no input parameters and returning nothing.  The name
-of the function is arbitrary in this case.
+The minimalist function or method that can be invoked is one defined as taking no input parameters and returning nothing.  
+The name of the function is arbitrary in this case.
 
 ## Java
 In Java, we can write the following `invoke` method and be able to call it:
@@ -16,8 +16,8 @@ class Main {
     }
     
     public static void main(String[] args) {
-        (new Main()).invoke();
-        
+        Main object = new Main();
+        object.invoke();        
     }
 }
 ```
