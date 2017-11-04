@@ -56,8 +56,10 @@ func not(val bool) bool {
 
 ### Implementation in Python 
 
+In Python there is already a logical operator `not`, so for the emplementation we will use `Not` as the name of the function.
+
 ```python
-def not(val):
+def Not(val):
     # boolean -> boolean
     return not val
 ```
