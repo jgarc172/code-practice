@@ -1,4 +1,4 @@
-# Problem/Solution
+# Executing a Minimal program
 
 Execute is the minimum program that can be executed by the
 respective runtime.  The program should do "nothing".
