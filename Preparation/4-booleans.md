@@ -39,9 +39,9 @@ boolean equal(int num1, int num2){
 boolean data types have logical operators that produce boolean values:
 
 ```
-and
-or
-not
+&& (and)
+|| (or)
+!  (not)
 ```
 As we saw in an earlier section, the `not` logical operator is a unary operator that takes one boolean and returns a boolean.
 The `and` and `or` logical operators can be thought of functions that take two boolean values and return a boolean.  For 
