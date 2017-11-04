@@ -40,7 +40,11 @@ that
 not(false) -> !false -> true
 ```
 
-Therefore we can claim that `not` is equal to `!`.
+Therefore we can claim that 
+
+```
+not is equal to !
+```
 
 ## Steps to Solving Problems with Composition
 
