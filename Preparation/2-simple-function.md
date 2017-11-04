@@ -4,7 +4,14 @@ The practice exercises will consist of implementing a single method.  Before we 
 implementation of a simple function.
 
 The minimalist function or method that can be invoked is one defined as taking no input parameters and returning nothing.  
-The name of the function is arbitrary in this case.
+The name of the function is arbitrary in this case.  And the function signature notation (as explained in later sections) is 
+as follows:
+
+```
+invoke is a function that takes no input parameters and does not return any values:
+
+    invoke :   ->  
+```
 
 ## Java
 In Java, we can write the following `invoke` method and be able to call it:
