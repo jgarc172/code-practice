@@ -13,7 +13,7 @@ The following function signature notation will be used for all the exercises and
 programming language:
 
 ```
-name of function or method: type1, type2, ... -> returned type
+name of function or method : type1, type2, ... -> returned type
 ```
 
 To demonstrate the use of the notation, we can define and implement a function that takes one boolean boolean parameter and 
@@ -29,10 +29,10 @@ Here is the definition and function signature:
 The not function takes a boolean value and it returns
 the reverse of its value:
 
-  not: boolean -> boolean
+  not : boolean -> boolean
 ```
 
-Example:
+Example invocation of `not` and its result:
 ```
 not(true)  -> false
 not(false) -> true
@@ -44,6 +44,10 @@ not(false) -> true
 boolean not(boolean val){
     return !val;
 }
+
+invocation:
+object.not(true)  -> false
+object.not(false) -> true
 ```
 
 ### Implementation in Go 
@@ -52,6 +56,10 @@ boolean not(boolean val){
 func not(val bool) bool {
     return !val
 }
+
+invocation:
+not(true)  -> false
+not(false) -> true
 ```
 
 ### Implementation in Python 
@@ -62,6 +70,10 @@ In Python there is already a logical operator `not`, so for the emplementation w
 def Not(val):
     # boolean -> boolean
     return not val
+    
+invocation:
+Not(True)  -> False
+Not(False) -> True
 ```
 
 ### Implementation in JavaScript 
@@ -71,4 +83,8 @@ function not(val){
     // boolean -> boolean
     return !val;
 }
+
+invocation:
+not(true)  -> false
+not(false) -> true
 ```
