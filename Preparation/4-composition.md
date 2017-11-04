@@ -8,7 +8,7 @@ Programming languages already give us those small and fundamental (**primitive**
 basic value types* and some of the *built-in* operators.  In addition to those, we have to include the use of **literals** to 
 produce such element values.
 
-## Composition using Built-In Operators or Literals
+## Composition using Literals and Built-In Operators
 Level 1 exercises will be limited to the use of the most basic built-in elements provided by programming languages.  The aim
 of these exercises is to make use of simple elements such as **literals** and the available built-in operators.
 
@@ -27,6 +27,7 @@ string: length, indexAt, etc.
 ```
 
 ## Composition using Basic Control Structures
+Level 2 exercises will introduce the use of basic control structures like if/else and loops
 
 ## Logical NOT Function as an Example of Composition
 The function `not` that was implemented in a previous section is an example of composition.  Here is the definition and 
