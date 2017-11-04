@@ -12,14 +12,18 @@ The logical NOT operator is a conversion operator; that is, it takes a boolean v
 
 Let's define and implement the NOT operator as a function:
 
-> The not function takes a boolean value and it returns
+```
+The not function takes a boolean value and it returns
 the reverse of its value:
 
->>not: boolean -> boolean
+  not: boolean -> boolean
+```
 
-> Example:
->> not(true)  -> false<br>
->> not(false) -> true
+Example:
+```
+not(true)  -> false<br>
+not(false) -> true
+```
 
 ### Implementation in Java
 
