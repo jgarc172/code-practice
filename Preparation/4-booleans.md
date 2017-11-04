@@ -55,6 +55,6 @@ In Java, this function can be implemented as follows:
 
 ```java
 boolean or(boolean val1, boolean val2){
-  return val1 && val2;
+  return val1 || val2;
 }
 ```
