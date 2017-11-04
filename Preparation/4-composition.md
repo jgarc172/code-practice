@@ -50,7 +50,8 @@ not is equal to !
 
 * Use the input parameters as they should always be part of the solution
 * Consider the function signature and consider any built-in operators or functions that have the same function signature
-* If the built-in operator or function doesn't have the exact needed signature, **convert** the operator using another function
+* If the built-in operator or function doesn't have the exact needed signature, **convert** the operator using another 
+function
 * Use composition to achieve the solution
 
 In the exercises, we will try to provide hints that will allow you to apply the above steps.
