@@ -44,8 +44,9 @@ not(false) -> true
 boolean not(boolean val){
     return !val;
 }
-
+```
 invocation:
+```
 object.not(true)  -> false
 object.not(false) -> true
 ```
@@ -56,8 +57,9 @@ object.not(false) -> true
 func not(val bool) bool {
     return !val
 }
-
+```
 invocation:
+```
 not(true)  -> false
 not(false) -> true
 ```
@@ -84,8 +86,9 @@ function not(val){
     // boolean -> boolean
     return !val;
 }
-
+```
 invocation:
+```
 not(true)  -> false
 not(false) -> true
 ```
