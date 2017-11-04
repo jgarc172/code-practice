@@ -70,7 +70,9 @@ In Python there is already a logical operator `not`, so for the emplementation w
 def Not(val):
     # boolean -> boolean
     return not val
-    
+```
+```
+invocation:
 Not(True)  -> False
 Not(False) -> True
 ```
