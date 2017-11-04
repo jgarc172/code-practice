@@ -53,4 +53,4 @@ not is equal to !
 * If the built-in operator or function doesn't have the exact needed signature, **convert** the operator using another function
 * Use composition to achieve the solution
 
-In the exercises, we will try to provide hints that will allow to apply the above steps.
+In the exercises, we will try to provide hints that will allow you to apply the above steps.
