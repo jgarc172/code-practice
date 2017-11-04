@@ -1,10 +1,10 @@
 # Executing a Minimal program
 
-Execute is the minimum program that can be executed by the
-respective runtime.  The program should do "nothing".
+Execute is the minimum program that can be executed by the respective programming language runtime.  The program should 
+do "nothing".
 
 ## Java
-In Java, we can write the following code and be able to execute it:
+In Java, we can write the following code that does nothing and be able to execute it:
 
 ```java runnable
 class Main {
@@ -20,6 +20,7 @@ $ javac Execute.java
 $ java Execute
 $ 
 ```
+There is no output as the program does nothing.
 
 ## Go
 In Go, we can write the following code and be able to execute it:
