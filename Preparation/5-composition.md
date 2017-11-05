@@ -24,7 +24,8 @@ the `Not` operator.  We'll use the Go operator for the demonstration.
 
 ```go
 ! reverses the logical value of its operand
-! : boolean -> boolean
+
+    ! : boolean -> boolean
 
 !true  -> false
 !false -> true
