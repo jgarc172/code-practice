@@ -21,6 +21,14 @@ integer operators and their function signature:
 * : integer, integer -> integer
 
 string: 
+
+integer comparison operators and their function signature:
+
+== : integer, integer -> boolean
+>  : integer, integer -> boolean
+<  : integer, integer -> boolean
+>= : integer, integer -> boolean
+<= : integer, integer -> boolean
 ```
 
 ## Control Structures
