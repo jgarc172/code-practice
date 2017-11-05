@@ -1,8 +1,10 @@
 
-# Composition as Problem Solving
+# Value Composition as Problem Solving
 
 To solve any problem, small or large, it is important that we understand the smallest components of a problem and its 
-respective solution.
+respective solution.  In the basic level practice exercises, we will limit to the use of **value** composition as opposed to 
+**function** composition.  Eventually, for for advanced practice exercises we can make use of function composition to solve
+problems.
 
 Programming languages already give us those small and fundamental (**primitive**) elements.  We already introduced the *three
 basic value types* and some of the *built-in* operators.  In addition to those, we have to include the use of **literals** to 
@@ -26,9 +28,6 @@ integer: +, -, *, etc.
 string: length, indexAt, etc.
 ```
 
-## Composition using Basic Control Structures
-Level 2 exercises will introduce the use of basic control structures like if/else and loops
-
 ## Logical NOT Function as an Example of Composition
 The function `not` that was implemented in a previous section is an example of composition.  Here is the definition and 
 function signature:
@@ -47,25 +46,26 @@ func not(value bool) bool {
 }
 ```
 
-We can claim that the solution is made up of the composition of the operator `!` and the given parameter `value`.  We can also
-claim that the operator `!` is itself a function that takes a boolean value and returns a boolean value as:
+We can claim that the solution is made up of the composition of the operator `!` and the given parameter `value`.  It 
+aids to know that the operator `!` is itself a function that takes a boolean value and returns a boolean value as:
 
 ```
 ! : boolean -> boolen
 ```
 
-That is, the function definition `not(value bool)` is equal to `!value`.  At runtime, when we use actual values, we can claim 
-that
+That is, the function signature `not(value bool)` is equivalent to its implementation `!value`.  At runtime, when we use 
+actual values, we can claim that
 
 ```
 not(false) -> !false -> true
 ```
 
-Therefore we can claim that 
+Therefore we have shown that
 
-```
-not is equal to !
-```
+> applying the function **not** is equivalent to applying the operator **!**
+
+## Composition using Basic Control Structures
+Level 2 exercises will introduce the use of basic control structures like if/else and loops
 
 ## Steps to Solving Problems with Composition
 
