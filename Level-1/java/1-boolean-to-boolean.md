@@ -8,14 +8,14 @@ boolean and(boolean val1,boolean val2) {
  
 }
 ```
-
-Solution:
+<details>
+ <summary>Solution:</summary>
 ```java runnable
 boolean and(boolean val1,boolean val2) {
     return val1 && val2;
 }
 ```
-
+</details>
 
 ## OR 
 
