@@ -1,36 +1,15 @@
 
 # Value Composition as Problem Solving
 
-To solve any problem, small or large, it is important that we understand the smallest components of a problem and its 
-respective solution.  In the basic level practice exercises, we will limit to the use of **value** composition as opposed to 
-**function** composition.  Eventually, for for advanced practice exercises we can make use of function composition to solve
-problems.
-
-Programming languages already give us those small and fundamental (**primitive**) elements.  We already introduced the *three
-basic value types* and some of the *built-in* operators.  In addition to those, we have to include the use of **literals** to 
-produce such element values.
-
-## Composition using Literals and Built-In Operators
-Level 1 exercises will be limited to the use of the most basic built-in elements provided by programming languages.  The aim
-of these exercises is to make use of simple elements such as **literals** and the available built-in operators.
-
-```
-Literals:
-
-booleans: true, false
-integers: -7942, 5134, 0, 10, etc.
-strings: "a", "abc", "Hello", etc.
-
-Built-In Operators and Functions:
-
-boolean: !, &&, ||
-integer: +, -, *, etc.
-string: length, indexAt, etc.
-```
+Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as 
+needed to produce values of a desired type.  This approach of composing values can be tought of **value** composition as 
+opposed to **function** composition.  The basic level practice exercises will make use of value composition.  Eventually, for 
+advanced practice exercises we can make use of function composition to solve problems.
 
 ## Logical NOT Function as an Example of Composition
-The function `not` that was implemented in a previous section is an example of composition.  Here is the definition and 
-function signature:
+This is a trivial example, but it is used to demonstrate the key approaches to solving problems.
+
+Here is the definition and function signature:
 
 ```
 The not function takes a boolean value and it returns
@@ -38,7 +17,20 @@ the reverse of its value:
 
   not : boolean -> boolean
 ```
-And here it is its implementation in Go:
+
+A simple solution would be to ask the question: "is there an existing function or operator that has the same function signature 
+and the same definition?  One operator that comes to mind is the `!` operator in Java, Go, and JavaScript.  In Python there is
+the `Not` operator.  We'll use the Go operator for the demonstration.
+
+```go
+! reverses the logical value of its operand
+! : boolean -> boolean
+
+!true  -> false
+!false -> true
+```
+
+Then we can implement it using the Go logical operator:
 
 ```go
 func not(value bool) bool {
