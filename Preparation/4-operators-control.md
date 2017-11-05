@@ -40,7 +40,7 @@ for : integer, boolean -> repeat execution
 ```
 
 ## Literals
-Literals are not necessarily the application of a function, but it helps to see what their function signature is:
+Literals are not necessarily the application of a function, but it helps to see what their function signature could be:
 
 ```
 boolean: 
