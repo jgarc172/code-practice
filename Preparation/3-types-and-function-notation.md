@@ -130,7 +130,7 @@ function not(value){
 }
 ```
 
-which has a signature:
+We add a comment to the signature to make it more complete:
 
 ```javascript
 not(value)
