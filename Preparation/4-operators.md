@@ -14,7 +14,8 @@ boolean operators and their function signature:
 && : boolean, boolean -> boolean
 || : boolean, boolean -> boolean
 
-integer: 
+integer operators and their function signature:
+
 + : integer, integer -> integer
 - : integer, integer -> integer
 * : integer, integer -> integer
