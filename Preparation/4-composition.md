@@ -64,9 +64,6 @@ Therefore we have shown that
 
 > applying the function **not** is equivalent to applying the operator **!**
 
-## Composition using Basic Control Structures
-Level 2 exercises will introduce the use of basic control structures like if/else and loops
-
 ## Steps to Solving Problems with Composition
 
 * Use the input parameters as they should always be part of the solution
