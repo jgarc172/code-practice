@@ -46,7 +46,7 @@ func not(value bool) bool {
 }
 ```
 
-We can claim that the solution is made up of the composition of the operator `!` and the given parameter `value`.  It 
+We can claim that the solution is made up of the composition of applying the operator `!` to the given parameter `value`.  It 
 aids to know that the operator `!` is itself a function that takes a boolean value and returns a boolean value as:
 
 ```
