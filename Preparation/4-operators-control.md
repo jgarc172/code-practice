@@ -32,7 +32,8 @@ integer comparison operators and their function signature:
 ```
 
 ## Control Structures
-Here is a list of some of the common control structures and their function signatures:
+Here is a list of some of the common control structures and their function signatures.  For example, the `if` control 
+structure can be viewed as a function that takes a boolean value and exectues the next statements if the value is true:
 
 ```
 if  : boolean -> execution
