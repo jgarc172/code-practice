@@ -6,7 +6,7 @@ needed to produce values of a desired type.  This approach of composing values c
 opposed to **function** composition.  The basic level practice exercises will make use of value composition.  Eventually, for 
 advanced practice exercises we can make use of function composition to solve problems.
 
-## Logical NOT Function as an Example of Composition
+## Logical NOT Function as an Example of Application of an Existing Operator
 This is a trivial example, but it is used to demonstrate the key approaches to solving problems.
 
 Here is the definition and function signature:
@@ -18,9 +18,7 @@ the reverse of its value:
   not : boolean -> boolean
 ```
 
-A simple solution would be to ask the question: "is there an existing function or operator that has the same function signature 
-and the same definition?  One operator that comes to mind is the `!` operator in Java, Go, and JavaScript.  In Python there is
-the `Not` operator.  
+A simple solution would be to ask the question: "is there an existing function or operator that has the same function signature and the same definition?  One operator that comes to mind is the `!` operator in Java, Go, and JavaScript.  In Python there is the `Not` operator.  
 
 We'll use the Go operator for the demonstration.
 
