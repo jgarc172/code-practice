@@ -5,10 +5,12 @@ The coding exercises will be based on the three most common fundamental value ty
 exercises: 
 
 * boolean
-* integer
+* number (integer)
 * string
 
 ## Function (Method) Notation
+Exercises will be based on implementing a given function (method) signature with its corresponding definition.
+
 The following function signature notation will be used for all the exercises and will be translated to their respective 
 programming language:
 
@@ -41,10 +43,23 @@ not(false) -> true
 ### Implementation in Java
 
 ```java
-boolean not(boolean val){
-    return !val;
+boolean not(boolean value){
+    return !value;
 }
 ```
+
+which has a signature:
+
+```java
+boolean not(boolean value)
+```
+
+and an implementation:
+
+```java
+return !value;
+```
+
 invocation:
 ```
 object.not(true)  -> false
@@ -54,10 +69,23 @@ object.not(false) -> true
 ### Implementation in Go 
 
 ```go
-func not(val bool) bool {
-    return !val
+func not(value bool) bool {
+    return !value
 }
 ```
+
+which has a signature:
+
+```go
+not(value bool) bool
+```
+
+and an implementation:
+
+```go
+return !value
+```
+
 invocation:
 ```
 not(true)  -> false
@@ -69,10 +97,24 @@ not(false) -> true
 In Python there is already a logical operator `not`, so for the emplementation we will use `Not` as the name of the function.
 
 ```python
-def Not(val):
+def Not(value):
     # boolean -> boolean
-    return not val
+    return not value
 ```
+
+We add a comment to the signature to make it more complete:
+
+```python
+Not(value):
+  # boolean -> boolean
+```
+
+and an implementation:
+
+```python
+return not value
+```
+
 invocation:
 ```
 Not(True)  -> False
@@ -82,11 +124,25 @@ Not(False) -> True
 ### Implementation in JavaScript 
 
 ```javascript
-function not(val){
+function not(value){
     // boolean -> boolean
-    return !val;
+    return !value;
 }
 ```
+
+which has a signature:
+
+```javascript
+not(value)
+  // boolean -> boolean
+```
+
+and an implementation:
+
+```javascript
+return !value;
+```
+
 invocation:
 ```
 not(true)  -> false
