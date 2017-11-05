@@ -38,3 +38,20 @@ Here is a list of some of the common control structures and their function signa
 if  : boolean -> execution
 for : integer, boolean -> repeat execution
 ```
+
+## Literals
+Literals are not necessarily the application of a function, but it helps to see what their function signature is:
+
+```
+boolean: 
+  true  -> boolean
+  false -> boolean
+
+integer: 
+  10  -> integer
+  -45 -> integer
+  
+string:
+  "a"     -> string
+  "hello" -> string
+```
