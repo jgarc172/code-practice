@@ -20,7 +20,9 @@ the reverse of its value:
 
 A simple solution would be to ask the question: "is there an existing function or operator that has the same function signature 
 and the same definition?  One operator that comes to mind is the `!` operator in Java, Go, and JavaScript.  In Python there is
-the `Not` operator.  We'll use the Go operator for the demonstration.
+the `Not` operator.  
+
+We'll use the Go operator for the demonstration.
 
 ```go
 ! reverses the logical value of its operand
