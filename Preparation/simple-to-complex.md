@@ -20,14 +20,14 @@ For example in Java, the digits `10` produce the value 10 of type int:
 
 Here are more examples of literals of the three basic types in their respective programming languages:
 
-### Java
+### Java Literals
 
 ```java
 boolean:
   true  -> boolean
   false -> boolean
 
-integer:
+int:
   5   -> int
   0   -> int
  -20  -> int
@@ -36,4 +36,40 @@ String:
   "a"     -> String
   "hello" -> String
   ""      -> String
+```
+
+### Go Literals
+
+```go
+boolean:
+  true  -> bool
+  false -> bool
+
+integer:
+  5   -> integer
+  0   -> integer
+ -20  -> integer
+
+string:
+  "a"     -> string
+  "hello" -> string
+  ""      -> string
+```
+
+### Python Literals
+
+```python
+bool:
+  true  -> bool
+  false -> bool
+
+int:
+  5   -> int
+  0   -> int
+ -20  -> int
+
+string:
+  "a"     -> str
+  "hello" -> str
+  ""      -> str
 ```
