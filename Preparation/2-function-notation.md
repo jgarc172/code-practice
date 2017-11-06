@@ -1,12 +1,4 @@
-# Basic Value Types and Function Notation
-
-## Basic Value Types 
-The coding exercises will be based on the three most common fundamental value types in the programming languages used in the 
-exercises: 
-
-* boolean
-* numerical (integer)
-* string (characters)
+# Function Notation
 
 ## Function (Method) Notation
 Exercises will be based on implementing a given function (method) signature with its corresponding definition.
