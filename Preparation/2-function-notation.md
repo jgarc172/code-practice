@@ -23,7 +23,7 @@ The plus function takes two integer values and it returns their sum as an intege
   plus : integer, integer -> integer
 ```
 
-Example invocation (application) of `and` and its result:
+Example invocation (application) of `plus` and its result:
 ```
 plus(2, 3)  -> 5
 plus(5, -5) -> 0
@@ -86,54 +86,54 @@ plus(5, -5) -> 0
 In Python there is already a logical operator `not`, so for the emplementation we will use `Not` as the name of the function.
 
 ```python
-def Not(value):
-    # boolean -> boolean
-    return not value
+def plus(num1, num2):
+    # int, int -> int
+    return num1 + num2
 ```
 
-which has a signature (and a comment):
+which has a signature (and a comment for completeness):
 
 ```python
-Not(value):
-  # boolean -> boolean
+plus(num1, num2)
+# int, int -> int
 ```
 
 and an implementation:
 
 ```python
-return not value
+return num1 + num2
 ```
 
 invocation:
 ```
-Not(True)  -> False
-Not(False) -> True
+plus(2, 3)  -> 5
+plus(5, -5) -> 0
 ```
 
 ### Implementation in JavaScript 
 
 ```javascript
-function not(value){
-    // boolean -> boolean
-    return !value;
+function plus(num1, num2){
+    // number, number -> number
+    return num1 + num2;
 }
 ```
 
-which has a signature (and a comment):
+which has a signature (and a comment for completeness):
 
 ```javascript
-not(value)
-  // boolean -> boolean
+plus(num1, num2)
+// number, number -> number
 ```
 
 and an implementation:
 
 ```javascript
-return !value;
+return num1 + num2;
 ```
 
 invocation:
 ```
-not(true)  -> false
-not(false) -> true
+plus(2, 3)  -> 5
+plus(5, -5) -> 0
 ```
