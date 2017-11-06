@@ -45,10 +45,10 @@ bool:
   true  -> bool
   false -> bool
 
-integer:
-  5   -> integer
-  0   -> integer
- -20  -> integer
+int:
+  5   -> int
+  0   -> int
+ -20  -> int
 
 string:
   "a"     -> string
