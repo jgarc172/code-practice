@@ -3,83 +3,82 @@
 ## Function (Method) Notation
 Exercises will be based on implementing a given function (method) signature with its corresponding definition.
 
-The following function signature notation will be used for all the exercises and will be translated to their respective 
-programming language:
+The following function signature notation will be used for all the exercises and will be translated to their respective programming language:
 
 ```
 name of function or method : type1, type2, ... -> returned type
 ```
 
-To demonstrate the use of the notation, we can define and implement a function that takes one boolean value and 
-returns a boolean value.
+To demonstrate the use of the notation, we can define and implement a function that takes two integer values and returns an integer value.
 
-## Logical NOT Operator as a Conversion Function 
-The logical NOT operator is a conversion operator; that is, it takes a boolean value and it converts the value to its logical reverse.
+## plus function
+
+The plus function is a simple example of using a function instead of the operator `+` to sum two integer values.
 
 Here is the definition and function signature:
 
 ```
-The not function takes a boolean value and it returns the reverse of its value:
+The plus function takes two integer values and it returns their sum as an integer:
 
-  not : boolean -> boolean
+  plus : integer, integer -> integer
 ```
 
-Example invocation (application) of `not` and its result:
+Example invocation (application) of `and` and its result:
 ```
-not(true)  -> false
-not(false) -> true
+plus(2, 3)  -> 5
+plus(5, -5) -> 0
 ```
 
 ### Implementation in Java
 
 ```java
-boolean not(boolean value){
-    return !value;
+int plus(int num1, int num2){
+    return num1 + num2;
 }
 ```
 
 which has a signature:
 
 ```java
-boolean not(boolean value)
+int plus(int num1, int num2)
 ```
 
 and an implementation:
 
 ```java
-return !value;
+return num1 + num2;
 ```
 
 invocation:
 ```
-object.not(true)  -> false
-object.not(false) -> true
+object.plus(2, 3)  -> 5
+object.plus(5, -5) -> 0
 ```
 
 ### Implementation in Go 
 
 ```go
-func not(value bool) bool {
-    return !value
+func plus(num1 int, num2 int) int {
+    return num1 + num2
 }
 ```
 
 which has a signature:
 
 ```go
-not(value bool) bool
+plus(num1 int, num2 int) int
 ```
 
 and an implementation:
 
 ```go
-return !value
+return num1 + num2
 ```
 
 invocation:
-```
-not(true)  -> false
-not(false) -> true
+```go
+plus(2, 3)  -> 5
+plus(5, -5) -> 0
 ```
 
 ### Implementation in Python 
