@@ -73,3 +73,21 @@ str:
   "hello" -> str
   ""      -> str
 ```
+
+### JavaScript Literals
+
+```javascript
+boolean:
+  true  -> boolean
+  false -> boolean
+
+number:
+  5   -> number
+  0   -> number
+ -20  -> number
+
+string:
+  "a"     -> string
+  "hello" -> string
+  ""      -> string
+```
