@@ -1,7 +1,7 @@
 
 # Value Composition as Problem Solving
 
-Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as needed to produce values of a desired type.  This approach of composing values can be tought of **value composition** as opposed to **function composition**.  The basic level practice exercises will make use of value composition.  Eventually, for advanced practice exercises we can make use of function composition to solve problems.
+Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as needed to produce values of a desired type.  This approach of composing values is basically creating expressions but can be tought of as **value composition**.  The basic level practice exercises will aim to illustrate the use of common expressions as value composition.  These in turn will become useful when dealing with more advanced exercises.
 
 ## Logical NOT Function as an Example of Application of an Existing Operator
 This is a trivial example, but it is used to demonstrate the key approaches to solving problems.
