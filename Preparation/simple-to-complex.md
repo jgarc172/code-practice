@@ -58,7 +58,7 @@ string:
 
 ### Python Literals
 
-```python
+```
 bool:
   true  -> bool
   false -> bool
@@ -68,7 +68,7 @@ int:
   0   -> int
  -20  -> int
 
-string:
+str:
   "a"     -> str
   "hello" -> str
   ""      -> str
