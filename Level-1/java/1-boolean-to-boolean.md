@@ -10,7 +10,7 @@ boolean and(boolean val1,boolean val2) {
 ```
 
 Solution:
-```java runnable
+```java 
 boolean and(boolean val1,boolean val2) {
     return val1 && val2;
 }

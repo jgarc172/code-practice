@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func isPositive(num int) bool {
-	return num > 0
+	return false
 }
 
 func main() {
@@ -28,14 +28,25 @@ func runTests(tests []test) {
 	fmt.Println()
 	for _, test := range tests {
 		result := isPositive(test.input)
-		output := fmt.Sprintf("isPositive(%d) \t ->  %t ", test.input, result)
 
-		if result == test.expected {
-			output += "\t (OK)"
-		} else {
-			output += fmt.Sprintf("\t (X) expected %t \n", test.expected)
-		}
-
+		output := testString(test.input, result)
+		output += okString(result, test.expected)
 		fmt.Println(output)
 	}
+}
+
+func testString(input int, result bool) string {
+	str := "isPositive(%d) \t -> %t "
+	return fmt.Sprintf(str, input, result)
+}
+
+func okString(result bool, expected bool) string {
+	var okStr string
+	if result == expected {
+		okStr = "\t (OK)"
+	} else {
+		okStr = fmt.Sprintf("\t (X) expected %t \n", expected)
+	}
+
+	return okStr
 }
