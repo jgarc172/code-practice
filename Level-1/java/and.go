@@ -38,8 +38,8 @@ func runTests(tests []test) {
 }
 
 func testString(input1 bool, input2 bool, result bool) string {
-	str := "and(%t, %t) \t -> %t "
-	return fmt.Sprintf(str, input1, input2, result)
+	testStr := "and(%t, %t) \t -> %t "
+	return fmt.Sprintf(testStr, input1, input2, result)
 }
 
 func okString(result bool, expected bool) string {
