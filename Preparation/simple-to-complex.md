@@ -41,7 +41,7 @@ String:
 ### Go Literals
 
 ```go
-boolean:
+bool:
   true  -> bool
   false -> bool
 
