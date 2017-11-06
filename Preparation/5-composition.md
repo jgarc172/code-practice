@@ -1,7 +1,7 @@
 
 # Value Composition as Problem Solving
 
-Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as needed to produce values of a desired type.  This approach of composing values can be tought of **value** composition as opposed to **function** composition.  The basic level practice exercises will make use of value composition.  Eventually, for advanced practice exercises we can make use of function composition to solve problems.
+Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as needed to produce values of a desired type.  This approach of composing values can be tought of **value composition** as opposed to **function composition**.  The basic level practice exercises will make use of value composition.  Eventually, for advanced practice exercises we can make use of function composition to solve problems.
 
 ## Logical NOT Function as an Example of Application of an Existing Operator
 This is a trivial example, but it is used to demonstrate the key approaches to solving problems.
@@ -36,15 +36,13 @@ func not(value bool) bool {
 }
 ```
 
-We can claim that the solution is made up of the composition of applying the operator `!` to the given parameter `value`.  It 
-aids to know that the operator `!` is itself a function that takes a boolean value and returns a boolean value as:
+We can claim that the solution is made up of the composition of applying the operator `!` to the given parameter `value`.  It aids to know that the operator `!` is itself a function that takes a boolean value and returns a boolean value as:
 
 ```
 ! : boolean -> boolen
 ```
 
-That is, the function signature `not(value bool)` is equivalent to its implementation `!value`.  At runtime, when we use 
-actual values, we can claim that
+That is, the function signature `not(value bool)` is equivalent to its implementation `!value`.  At runtime, when we use actual values, we can claim that
 
 ```
 not(false) -> !false -> true
