@@ -1,12 +1,12 @@
-# Basic Types and Function Notation
+# Basic Value Types and Function Notation
 
 ## Basic Value Types 
 The coding exercises will be based on the three most common fundamental value types in the programming languages used in the 
 exercises: 
 
 * boolean
-* number (integer)
-* string
+* numerical (integer)
+* string (characters)
 
 ## Function (Method) Notation
 Exercises will be based on implementing a given function (method) signature with its corresponding definition.
@@ -18,23 +18,21 @@ programming language:
 name of function or method : type1, type2, ... -> returned type
 ```
 
-To demonstrate the use of the notation, we can define and implement a function that takes one boolean boolean parameter and 
+To demonstrate the use of the notation, we can define and implement a function that takes one boolean value and 
 returns a boolean value.
 
 ## Logical NOT Operator as a Conversion Function 
-The logical NOT operator is a conversion operator; that is, it takes a boolean value and it converts the value to its logical 
-reverse.
+The logical NOT operator is a conversion operator; that is, it takes a boolean value and it converts the value to its logical reverse.
 
 Here is the definition and function signature:
 
 ```
-The not function takes a boolean value and it returns
-the reverse of its value:
+The not function takes a boolean value and it returns the reverse of its value:
 
   not : boolean -> boolean
 ```
 
-Example invocation of `not` and its result:
+Example invocation (application) of `not` and its result:
 ```
 not(true)  -> false
 not(false) -> true
@@ -102,7 +100,7 @@ def Not(value):
     return not value
 ```
 
-We add a comment to the signature to make it more complete:
+which has a signature (and a comment):
 
 ```python
 Not(value):
@@ -130,7 +128,7 @@ function not(value){
 }
 ```
 
-We add a comment to the signature to make it more complete:
+which has a signature (and a comment):
 
 ```javascript
 not(value)
