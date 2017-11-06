@@ -83,8 +83,6 @@ plus(5, -5) -> 0
 
 ### Implementation in Python 
 
-In Python there is already a logical operator `not`, so for the emplementation we will use `Not` as the name of the function.
-
 ```python
 def plus(num1, num2):
     # int, int -> int
