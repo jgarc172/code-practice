@@ -1,4 +1,4 @@
-# Basic Value Types and Value Creation
+# Basic Types and Value Creation
 ## Basic Value Types
 The coding exercises will be based on the three most common fundamental value types in the programming languages used in the 
 exercises: 
