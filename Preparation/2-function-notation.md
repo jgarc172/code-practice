@@ -13,7 +13,7 @@ To demonstrate the use of the notation, we can define and implement a function t
 
 ## plus function
 
-The plus function is a simple example of using a function instead of the operator `+` to sum two integer values.
+The plus function is a simple example of using a function (method) instead of the operator `+` to sum two integer values.
 
 Here is the definition and function signature:
 
