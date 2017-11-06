@@ -12,8 +12,28 @@ exercises:
 ## Literals as Creating Values of Basic Types
 All programming languages provide a syntax to **create** or **produce** values of a given type.  For the three basic types in our exercises, the syntax looks very similar in most programming languages.  For illustration purposes (and as described later) we can use the notation `->` to indicate "produces"
 
-For example in Java, the digits `10` **produce** the value 10 of type integer:
+For example in Java, the digits `10` produce the value 10 of type int:
 
 ```java
 10 -> int
+```
+
+Here are more examples of literals of the three basic types in their respective programming languages:
+
+### Java
+
+```java
+boolean:
+  true  -> boolean
+  false -> boolean
+
+integer:
+  5   -> int
+  0   -> int
+ -20  -> int
+
+String:
+  "a"     -> String
+  "hello" -> String
+  ""      -> String
 ```
