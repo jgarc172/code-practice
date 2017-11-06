@@ -39,20 +39,3 @@ if     : boolean -> execution
 for    : integer, boolean -> repeat execution
 switch :
 ```
-
-## Literals
-Literals are not necessarily the application of a function, but it helps to see what their function signature could be:
-
-```
-boolean: 
-  true  -> boolean
-  false -> boolean
-
-integer: 
-  10  -> integer
-  -45 -> integer
-  
-string:
-  "a"     -> string
-  "hello" -> string
-```
