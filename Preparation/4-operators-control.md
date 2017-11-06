@@ -1,9 +1,7 @@
 
 # Function Signature of Built-in Operators and Control Structures
 
-To take advantage and to make proper use of built-in operators and control structures, it helps to understand their inherent 
-function signature.  By doing so, we can see that the applying of these operators and control structures requires the input
-of values of a given type, or that some of them will produce a value of a given type.
+To take advantage and to make proper use of built-in operators and control structures, it helps to understand their inherent function signature.  By doing so, we can see that the applying of these operators and control structures requires the input of values of a given type, and that some of them will produce a value of a given type.
 
 ## Built-in Operators
 Here is a list of some of the common built-in operators in the programming languages used in the exercises:
@@ -22,6 +20,7 @@ integer operators and their function signature:
 * : integer, integer -> integer
 
 string: 
+(ToDo)
 
 integer comparison operators and their function signature:
 
@@ -33,12 +32,12 @@ integer comparison operators and their function signature:
 ```
 
 ## Control Structures
-Here is a list of some of the common control structures and their function signatures.  For example, the `if` control 
-structure can be viewed as a function that takes a boolean value and exectues the next statements if the value is true:
+Here is a list of some of the common control structures.  An attempt to define their function signature is provided.  For example, the `if` control structure can be viewed as a function that takes a boolean value and exectues the next statements if the value is true:
 
 ```
-if  : boolean -> execution
-for : integer, boolean -> repeat execution
+if     : boolean -> execution
+for    : integer, boolean -> repeat execution
+switch :
 ```
 
 ## Literals
