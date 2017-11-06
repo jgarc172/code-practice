@@ -58,7 +58,7 @@ string:
 
 ### Python Literals
 
-```
+```javascript
 bool:
   true  -> bool
   false -> bool
