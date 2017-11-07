@@ -10,14 +10,24 @@ Here is a list of some of the common built-in operators in the programming langu
 boolean operators and their function signature: 
 
 !  : boolean -> boolean
+example:    !true    -> false
+
 && : boolean, boolean -> boolean
+example:    true && true -> true
+
 || : boolean, boolean -> boolean
+example:    false || true -> true
 
 integer operators and their function signature:
 
 + : integer, integer -> integer
+example:    10 + 5 -> 15
+
 - : integer, integer -> integer
+example:    10 - 5 -> 5
+
 * : integer, integer -> integer
+example:    10 * 5 -> 50
 
 string: 
 (ToDo)
@@ -25,7 +35,11 @@ string:
 integer comparison operators and their function signature:
 
 == : integer, integer -> boolean
+example:    10 == 9 -> false
+
 >  : integer, integer -> boolean
+example:    11 > 13 -> false
+
 <  : integer, integer -> boolean
 >= : integer, integer -> boolean
 <= : integer, integer -> boolean
@@ -35,7 +49,8 @@ integer comparison operators and their function signature:
 Here is a list of some of the common control structures.  An attempt to define their function signature is provided.  For example, the `if` control structure can be viewed as a function that takes a boolean value and exectues the next statements if the value is true:
 
 ```
-if     : boolean -> execution
-for    : integer, boolean -> repeat execution
-switch :
+if     : boolean -> execute the next block of statements if true
+for    : boolean -> repeat execution of next block of statements if true
+while  : boolean -> repeat execution of next block of statements if true
+switch :  (ToDo)
 ```
