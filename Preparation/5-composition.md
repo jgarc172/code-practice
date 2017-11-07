@@ -1,5 +1,5 @@
 
-# Expressions and Value Composition as Problem Solving
+# Expressions and Value Composition 
 
 Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as needed to produce values of a desired type.  This approach of composing values is basically creating expressions but can be tought of as **value composition**.  The basic level practice exercises will aim to illustrate the use of common expressions as value composition.  These in turn will become useful when dealing with more advanced exercises.
 
@@ -19,6 +19,7 @@ Now, let's express the following problem using the `if` control construct:
 
 > Determine if the water is frozen.  The temperatue is 25 degrees Fahrenheit.  Water becomes ice when the temperature is 32 degrees Fahrenheit or less.
 
+### Implementation In Java
 ```java
 boolean isFrozen = false;
 int temperature = 25;
@@ -32,7 +33,9 @@ if (temperature <= 32){
 The application of the `<=` operator produces a boolean value that determines if the next block of code is exectuted.
 
 ```java
-temperature <= 32  -> true
+temperature <= 32  
+    25      <= 32
+       true
 ```
 
 Since the boolean expression is `true` the next statement is executed:
