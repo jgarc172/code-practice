@@ -69,6 +69,8 @@ if (temperature <= 32){
 The application of the `<=` operator produces the boolean value needed by the `if/else` control structure.  Since the boolean expression is `true` the `if` block statement is executed.  The `else` block statement is not executed.
 
 ```java
+   ( (<=) -> boolean ) -> (if/else) -> execute one of two blocks of statements
+
 if (temperature <= 32){
    isFrozen = true; 
 } else {
