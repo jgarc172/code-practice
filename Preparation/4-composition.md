@@ -24,6 +24,7 @@ So, the result of the `+` expression is an integer and is also the input to the 
 
 Now, let's express the following problem using the `if` control construct as part of the solution:
 
+#### Problem:
 > Determine if the water is frozen.  The temperatue is 25 degrees Fahrenheit.  Water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
 
 #### Solution:
@@ -113,8 +114,9 @@ In this case, the `if/else` construct was **not** necessary as the final value i
 
 ### Expressions in Functions
 
-If you find that an expression will be reused, you can define it as a function (method).  For example, the solution in the previous exercise was captured as a boolean variable `isFrozen`.  We can also capture the above expression as a named function and apply it to more than just the temperature `25`.
+If you find that an expression can be reused, you can define it as a function (method).  For example, the solution in the previous exercise was captured as a boolean variable `isFrozen`.  We can also capture the above expression as a named function and apply it to more than just the temperature `25`.
 
+#### Problem
 > Implement a function named `isFrozen` to determine if water is frozen for a given temperature, knowing that water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
 
 Implement the function using Implementation 1 and then using Implementation 2.
@@ -125,10 +127,24 @@ boolean isFrozen(int temperature){
 }
 ```
 
-Solution Using Implementation 1:
+#### Solution Using Implementation 1:
 ```java
-
+boolean isFrozen(int temperature){
+   return temperature <= 32;
+}
 ```
+
+#### Solution Using Implementation 2:
+```java
+boolean isFrozen(int temperature){
+   if (temperature <= 32){
+      return true;
+   } else {
+      return false;
+   }
+}
+```
+
 ## Review
 Solutions to a problem is a combination of applying smaller expressions.  It is preferrable to use small expression when the clarity of the solution is obvious.  If it is more clear to use a longer expressions, even if it takes extra steps, then use it. 
  
