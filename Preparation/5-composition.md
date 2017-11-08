@@ -41,6 +41,14 @@ isFrozen = temperature <= 32;
 . . .
 ```
 
+The application of the `<=` operator produces a boolean value that determines the value to be assigned to `isFrozen`.
+
+```java
+temperature <= 32  
+    25      <= 32
+       true
+```
+
 ### Implementation 2 in Java (`if/else` control)
 ```java
 boolean isFrozen; // final value to be determined. In Java it defaults to false.
@@ -54,17 +62,6 @@ if (temperature <= 32){
 . . .
 ```
 
-The application of the `<=` operator produces a boolean value that determines if the next block of code is exectuted.
+The application of the `<=` operator produces the boolean value needed by the `if/else` control structure.  Since the boolean expression is `true` the `if` block statement is executed.  The `else` block statement is not executed.
 
-```java
-temperature <= 32  
-    25      <= 32
-       true
-```
-
-Since the boolean expression is `true` the next statement is executed:
-
-```java
-isFrozen = true;
-```
  
