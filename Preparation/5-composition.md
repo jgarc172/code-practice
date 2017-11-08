@@ -41,9 +41,11 @@ isFrozen = temperature <= 32;
 . . .
 ```
 
-The application of the `<=` operator produces a boolean value that determines the value to be assigned to `isFrozen`: `(<=) -> boolean`
+The application of the `<=` operator produces a boolean value that determines the value to be assigned to `isFrozen`: 
 
 ```java
+   (<=) -> boolean
+   
 temperature <= 32  
     25      <= 32
        true
