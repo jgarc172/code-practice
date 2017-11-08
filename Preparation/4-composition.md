@@ -14,10 +14,10 @@ Let's combine the application of the `+` and the `*` operators in the following 
       80
 ```
 
-So, the result of the `+` expression is an input to the `*` expression to eventually produce an integer.
+So, the result of the `+` expression is an integer and is also the input to the `*` expression to eventually produce an integer.
 
 ```
-(+) -> (*) -> integer
+( (+) -> integer ) -> (*) -> integer
 ```
 
 ### Comparison and If Control Expressions
@@ -26,12 +26,13 @@ Now, let's express the following problem using the `if` control construct as par
 
 > Determine if the water is frozen.  The temperatue is 25 degrees Fahrenheit.  Water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
 
-Solution:
-- The final value should be whether or not the water is frozen.  This is naturally a boolean value: true if the water is frozen; false otherwise.  We can use the boolean variable `isFrozen` to assign the final boolean value.
-- Assign the integer value `25` to a variable `temperature`.  But we need a boolean.  See below on how the `temperature` integer is converted to a boolean using a comparison operator.
-- To produce a boolean value, we can use the definition given: Water becomes ice when the temperature is 32 degrees F. or less.  We know that the comparison operators produce a boolean, and the definition is a comparison of two values:  `temperature <= 32`.
-- solution 1: just assign the result of the comparison operation to the variable `isFrozen`
-- solution 2: use the `if` control structure to explicitly assign the boolean value to `isFrozen`, using the `<=` operation to obtain the boolean condition for the `if` control.
+#### Solution:
+- **Result**: The final value should be whether or not the water is frozen.  This is naturally a boolean value: true if the water is frozen; false otherwise.  We can use the boolean variable `isFrozen` to assign the final boolean value.
+- **Given**: The current temperature.  Assign the integer value `25` to a variable `temperature`.  But we need a boolean.  See below on how the `temperature` integer is converted to a boolean using a comparison operator.
+- **Given**: Definition of ice (frozen water).  Water becomes ice when the temperature is 32 degrees F. or less.  
+- **Given**: We know that the comparison operators produce a boolean, and the definition is a comparison of two values:  `temperature <= 32`. 
+- **solution 1**: just assign the result of the comparison operation to the variable `isFrozen`
+- **solution 2**: use the `if` control structure to explicitly assign the boolean value to `isFrozen`, using the `<=` operation to obtain the boolean condition for the `if` control.
 
 ### Implementation 1 in Java (no `if/else` control)
 ```java
@@ -110,6 +111,24 @@ Implentation 2:
 
 In this case, the `if/else` construct was **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very important.
 
+### Expressions in Functions
+
+If you find that an expression will be reused, you can define it as a function (method).  For example, the solution in the previous exercise was captured as a boolean variable `isFrozen`.  We can also capture the above expression as a named function and apply it to more than just the temperature `25`.
+
+> Implement a function named `isFrozen` to determine if water is frozen for a given temperature, knowing that water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
+
+Implement the function using Implementation 1 and then using Implementation 2.
+
+```java
+boolean isFrozen(int temperature){
+
+}
+```
+
+Solution Using Implementation 1:
+```java
+
+```
 ## Review
 Solutions to a problem is a combination of applying smaller expressions.  It is preferrable to use small expression when the clarity of the solution is obvious.  If it is more clear to use a longer expressions, even if it takes extra steps, then use it. 
  
