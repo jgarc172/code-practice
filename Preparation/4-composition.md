@@ -136,18 +136,15 @@ boolean isFrozen(int temperature){
 <details>
 <summary>Solution Using Implementation 1:</summary>
 <pre><code>
-
 boolean isFrozen(int temperature){
    return temperature <= 32;
 }
-
-</code><pre>
+</code></pre>
 </details>
 
 <details>
 <summary>Solution Using Implementation 2:</summary>
 <pre><code>
-
 boolean isFrozen(int temperature){
    if (temperature <= 32){
       return true;
@@ -155,7 +152,6 @@ boolean isFrozen(int temperature){
       return false;
    }
 }
-
 </code></pre>
 </details>
 
