@@ -49,8 +49,9 @@ example:    11 > 13 -> false
 Here is a list of some of the common control structures.  An attempt to define their function signature is provided.  For example, the `if` control structure can be viewed as a function that takes a boolean value and exectues the next statements if the value is true:
 
 ```
-if     : boolean -> execute the next block of statements if true
-for    : boolean -> repeat execution of next block of statements if true
-while  : boolean -> repeat execution of next block of statements if true
-switch :  (ToDo)
+if      : boolean -> execute the next block of statements if true
+if/else : boolean -> execute one of two blocks of statements
+for     : boolean -> repeat execution of next block of statements if true
+while   : boolean -> repeat execution of next block of statements if true
+switch  :  (ToDo)
 ```
