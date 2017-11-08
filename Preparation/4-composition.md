@@ -118,10 +118,13 @@ If you find that an expression can be reused, you can define it as a function (m
 
 #### Problem
 > Implement a function named `isFrozen` to determine if water is frozen for a given temperature, knowing that water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
-> Example:
-> isFrozen(25) -> true
-> isFrozen(40) -> false
-> isFrozen(32) -> true
+
+Example:
+```java
+isFrozen(25) -> true
+isFrozen(40) -> false
+isFrozen(32) -> true
+```
 
 Implement the function using Implementation 1 and then using Implementation 2.
 
