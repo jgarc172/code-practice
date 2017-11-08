@@ -108,7 +108,7 @@ Implentation 2:
    }
 ```
 
-In this case, the `if/else` construct was necessary as the final value is a boolean.  For other cases, the `if` or the `if/else` construct is very important.
+In this case, the `if/else` construct was **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very important.
 
 ## Review
 Solutions to a problem is a combination of applying smaller expressions.  It is preferrable to use small expression when the clarity of the solution if obvious.  If it is more clear to use a longer expressions, even if it takes extra steps, then use it. 
