@@ -4,6 +4,7 @@
 Now that we've seen how literals, operators, and control structures produce a value of a given type, we can combine them as needed to produce values of a desired type.  This approach of composing values is basically creating expressions but can be tought of as **value composition**.  The basic level practice exercises will aim to illustrate the use of common expressions as value composition.  These in turn will become useful when dealing with more advanced exercises.
 
 ## Examples of Expressions
+### Arithmetic Expressions
 
 Let's combine the application of the `+` and the `*` operators in the following way:
 
@@ -13,19 +14,42 @@ Let's combine the application of the `+` and the `*` operators in the following 
       80
 ```
 
-So, the result of the `+` expression is an input to the `*` expression.
+So, the result of the `+` expression is an input to the `*` expression to eventually produce an integer.
 
-Now, let's express the following problem using the `if` control construct:
+```
+(+) -> (*) -> integer
+```
 
-> Determine if the water is frozen.  The temperatue is 25 degrees Fahrenheit.  Water becomes ice when the temperature is 32 degrees Fahrenheit or less.
+### Comparison and If Control Expressions
 
-### Implementation In Java
+Now, let's express the following problem using the `if` control construct as part of the solution:
+
+> Determine if the water is frozen.  The temperatue is 25 degrees Fahrenheit.  Water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
+
+Solution:
+- The final value should be whether or not the water is frozen.  This is naturally a boolean value: true if the water is frozen; false otherwise.  We can use the boolean variable `isFrozen` to assign the final boolean value.
+- Assign the integer value `25` to a variable `temperature`.  But we need a boolean.  See below.
+- To produce a boolean value, we can use the definition given: Water becomes ice when the temperature is 32 degrees F. or less.  We know that the comparison operators produce a boolean, and the definition is a comparison of two values:  `temperature <= 32`.
+- solution 1: just assign the result of the comparison operation to the variable `isFrozen`
+- solution 2: use the `if` control structure to explicitly assign the boolean value to `isFrozen`, using the `<=` operation to obtain the boolean condition for the `if` control.
+
+### Implementation 1 in Java (no `if/else` control)
 ```java
-boolean isFrozen = false;
+boolean isFrozen; // final value to be determined. In Java it defaults to false.
+int temperature = 25;
+isFrozen = temperature <= 32;
+. . .
+```
+
+### Implementation 2 in Java (`if/else` control)
+```java
+boolean isFrozen; // final value to be determined. In Java it defaults to false.
 int temperature = 25;
 
 if (temperature <= 32){
    isFrozen = true; 
+} else {
+   isFrozen = false;
 }
 . . .
 ```
