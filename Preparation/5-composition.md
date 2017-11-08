@@ -85,4 +85,31 @@ if (true){
 . . .
    isFrozen = true; 
 ```
+
+### Comparing Implementation 1 and Implementation 2
+
+The two implementations are equivalent, as they both produce the boolean value needed to determine the value of `isFrozen`.
+
+```java
+Implementation 1:
+   
+   (<=) -> boolean
+   
+   isFrozen = temperature <= 32;
+   
+Implentation 2:
+
+   ( (<=) -> boolean ) -> (if/else) -> execute one of two blocks of statements
+   
+   if (temperature <= 32){
+      isFrozen = true; 
+   } else {
+      isFrozen = false;
+   }
+```
+
+In this case, the `if/else` construct was necessary as the final value is a boolean.  For other cases, the `if` or the `if/else` construct is very important.
+
+## Review
+Solutions to a problem is a combination of applying smaller expressions.  It is preferrable to use small expression when the clarity of the solution if obvious.  If it is more clear to use a longer expressions, even if it takes extra steps, then use it. 
  
