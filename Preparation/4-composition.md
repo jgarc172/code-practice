@@ -112,6 +112,14 @@ Implentation 2:
 
 In this case, the `if/else` construct was **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very important.
 
+Finally to summarize the two expressions in a function notation, knowing that `32 F.` is a constant,  we can think of them similar to a function notation represented as
+
+```
+   integer -> boolean
+```
+
+That is, the temperature `25` is the input, and the result is `true`.
+
 ### Expressions in Functions
 
 If you find that an expression can be reused, you can define it as a function (method).  For example, the solution in the previous exercise was captured as a boolean variable `isFrozen`.  We can also capture the above expression as a named function and apply it to more than just the temperature `25`.
