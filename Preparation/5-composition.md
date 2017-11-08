@@ -28,7 +28,7 @@ Now, let's express the following problem using the `if` control construct as par
 
 Solution:
 - The final value should be whether or not the water is frozen.  This is naturally a boolean value: true if the water is frozen; false otherwise.  We can use the boolean variable `isFrozen` to assign the final boolean value.
-- Assign the integer value `25` to a variable `temperature`.  But we need a boolean.  See below.
+- Assign the integer value `25` to a variable `temperature`.  But we need a boolean.  See below on how the `temperature` integer is converted to a boolean using a comparison operator.
 - To produce a boolean value, we can use the definition given: Water becomes ice when the temperature is 32 degrees F. or less.  We know that the comparison operators produce a boolean, and the definition is a comparison of two values:  `temperature <= 32`.
 - solution 1: just assign the result of the comparison operation to the variable `isFrozen`
 - solution 2: use the `if` control structure to explicitly assign the boolean value to `isFrozen`, using the `<=` operation to obtain the boolean condition for the `if` control.
