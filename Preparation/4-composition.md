@@ -129,6 +129,8 @@ If you find that an expression can be reused, you can define it as a function (m
 
 Example:
 ```java
+isFrozen : integer -> boolean
+
 isFrozen(25) -> true
 isFrozen(40) -> false
 isFrozen(32) -> true
