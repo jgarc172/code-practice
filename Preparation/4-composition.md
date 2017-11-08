@@ -129,14 +129,18 @@ boolean isFrozen(int temperature){
 <details>
 <summary>Solution Using Implementation 1:</summary>
 <pre><code>
+
 boolean isFrozen(int temperature){
    return temperature <= 32;
 }
+
 </code><pre>
 </details>
 
-#### Solution Using Implementation 2:
-```java
+<details>
+<summary>Solution Using Implementation 2:</summary>
+<pre><code>
+
 boolean isFrozen(int temperature){
    if (temperature <= 32){
       return true;
@@ -144,7 +148,9 @@ boolean isFrozen(int temperature){
       return false;
    }
 }
-```
+
+</code></pre>
+</details>
 
 ## Review
 Solutions to a problem is a combination of applying smaller expressions.  It is preferrable to use small expression when the clarity of the solution is obvious.  If it is more clear to use a longer expressions, even if it takes extra steps, then use it. 
