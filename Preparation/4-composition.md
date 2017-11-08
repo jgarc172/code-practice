@@ -126,13 +126,14 @@ boolean isFrozen(int temperature){
 
 }
 ```
-
-#### Solution Using Implementation 1:
+<details>
+<summary>Solution Using Implementation 1:</summary>
 ```java
 boolean isFrozen(int temperature){
    return temperature <= 32;
 }
 ```
+</details>
 
 #### Solution Using Implementation 2:
 ```java
