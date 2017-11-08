@@ -110,7 +110,7 @@ Implentation 2:
    }
 ```
 
-In this case, the `if/else` construct was **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very important.
+In this case, the `if/else` construct was **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very usefule to solve more complex problems.
 
 Finally to summarize the two expressions in a function notation, knowing that `32 F.` is a constant,  we can think of them similar to a function notation represented as
 
