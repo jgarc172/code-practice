@@ -22,9 +22,7 @@ func goSwim(isSummer bool, isCold bool) bool {
 }
 
 func main() {
-	// test function goSwim
-	// bool, bool -> bool
-
+	// goSwim : bool, bool -> bool
 	tests := []test{
 		{false, false, true},
 		{false, true, false},
@@ -36,15 +34,15 @@ func main() {
 }
 
 type test struct {
-	val1     bool
-	val2     bool
+	isSummer     bool
+	isCold     bool
 	expected bool
 }
 
 func runTests(tests []test) {
 	fmt.Println("goSwim(isSummer, isCold) -> boolean")
 	for _, test := range tests {
-		result := goSwim(test.val1, test.val2)
+		result := goSwim(test.isSummer, test.isCold)
 
 		fmt.Println(testString(test, result))
 	}
@@ -52,7 +50,7 @@ func runTests(tests []test) {
 
 func testString(t test, result bool) string {
 	format := "goSwim(%t, %t)  \t -> %t "
-	testStr := fmt.Sprintf(format, t.val1, t.val2, result)
+	testStr := fmt.Sprintf(format, t.isSummer, t.isCold, result)
 	okStr := okString(result, t.expected)
 	return testStr + okStr
 }
