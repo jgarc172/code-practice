@@ -8,8 +8,8 @@ import "fmt"
 	goSwim takes two booleans, isSummer and isCold, and it returns true when it is Summer or it is not cold
 
 	translations:
-		is Summer -> isSummer is true
-		is not cold -> isCold is false -> !isCold is true
+		it is Summer -> isSummer is true
+		it is not cold -> isCold is false -> !isCold is true
 		or -> ||
 		true when isSummer is true or !isCold is true
 		true when isSummer || !isCold
