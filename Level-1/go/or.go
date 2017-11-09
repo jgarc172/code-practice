@@ -31,8 +31,7 @@ func runTests(tests []test) {
 	for _, test := range tests {
 		result := or(test.val1, test.val2)
 
-		testStr := testString(test, result)
-		fmt.Println(testStr)
+		fmt.Println(testString(test, result))
 	}
 }
 
@@ -44,12 +43,9 @@ func testString(t test, result bool) string {
 }
 
 func okString(result bool, expected bool) string {
-	var okStr string
 	if result == expected {
-		okStr = "\t (OK)"
+		return  "\t (OK)"
 	} else {
-		okStr = fmt.Sprintf("\t (X) expected %t", expected)
+		return  fmt.Sprintf("\t (X) expected %t", expected)
 	}
-
-	return okStr
 }
