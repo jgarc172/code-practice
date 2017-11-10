@@ -39,17 +39,30 @@ type test struct {
 	expected bool
 }
 
+func (t test) String() string {
+	name := "goSwim"
+	params := "%t, %t"
+	return name + "(" + params + ")  \t -> %t "
+}
+
+func Header() string {
+	header :=
+`goSwim(isSummer, isCold) -> bool
+----------------------------------`
+	return header
+}
+
 func runTests(tests []test) {
-	fmt.Println("goSwim(isSummer, isCold) -> boolean")
+	fmt.Println(Header())
 	for _, test := range tests {
 		result := goSwim(test.isSummer, test.isCold)
-
 		fmt.Println(testString(test, result))
 	}
 }
 
 func testString(t test, result bool) string {
-	format := "goSwim(%t, %t)  \t -> %t "
+	//format := "goSwim(%t, %t)  \t -> %t "
+	format := t.String()
 	testStr := fmt.Sprintf(format, t.isSummer, t.isCold, result)
 	okStr := okString(result, t.expected)
 	return testStr + okStr
