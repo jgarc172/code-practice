@@ -6,15 +6,15 @@ import "fmt"
 	isPositive indicates if a number is positive based on the definition of a positive number: a number is positive if it is greater than 0.
 
 	isPositive takes an integer, num, and it returns true if num is positive
-		
+
 		isPositive : integer -> boolean
 			Ex:
 		isPositive(100)	 -> true 	 (OK)
 		isPositive(0)	 -> false 	 (OK)
-		isPositive(-5)	 -> false 	 (OK)	
+		isPositive(-5)	 -> false 	 (OK)
 
 	translations:
-		- num is positive if it is greater than 0 
+		- num is positive if it is greater than 0
 		- true when num > 0
 		  false otherwise (when num <= 0)
 	solution:
@@ -22,7 +22,7 @@ import "fmt"
 */
 
 func isPositive(num int) bool {
-	return num > 0 
+	return num > 0
 }
 
 func main() {
@@ -37,7 +37,7 @@ func main() {
 }
 
 type test struct {
-	num int
+	num      int
 	expected bool
 }
 
@@ -49,11 +49,14 @@ func (t test) String() string {
 
 func Header() string {
 	header :=
-`isPositive(num) -> bool
+		`isPositive(num) -> bool
 -----------------------`
 	return header
 }
 
+func (f isPositive) String() string {
+	f.name
+}
 func runTests(tests []test) {
 	fmt.Println(Header())
 	for _, test := range tests {

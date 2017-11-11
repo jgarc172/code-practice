@@ -1,13 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
-func main(){
-	fmt.Printf("function: %T \n", myFunc)
-	str := 
-`myFunc(num) int
-----------------`
-	fmt.Println(str)
+func main() {
+	val := reflect.ValueOf(myFunc)
+	typ := reflect.TypeOf(myFunc)
+	inputs := typ.NumIn()
+
+	fmt.Println("value:", val)
+	fmt.Println("type:", typ)
+	fmt.Println("inputs:", inputs)
+	fmt.Printf("function: %v - %v", myFunc, val.Kind())
 }
 
 func myFunc(num int) int {
