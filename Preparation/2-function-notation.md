@@ -51,8 +51,8 @@ return num1 + num2;
 
 invocation:
 ```
-object.plus(2, 3)  -> 5
-object.plus(5, -5) -> 0
+anObject.plus(2, 3)  -> 5
+anObject.plus(5, -5) -> 0
 ```
 
 ### Implementation in Go 

@@ -28,10 +28,23 @@ Now, let's express the following problem using the `if` control construct as par
 > Determine if the water is frozen.  The temperatue is 25 degrees Fahrenheit.  Water becomes ice (frozen) when the temperature is 32 degrees Fahrenheit or less.
 
 #### Solution:
+The problem description can be rephrased or translated to this:
+
+```
+given a tempereature (integer 25), determine the boolean value isFrozen.
+
+integer -> boolean
+```
 - **Result**: The final value should be whether or not the water is frozen.  This is naturally a boolean value: true if the water is frozen; false otherwise.  We can use the boolean variable `isFrozen` to assign the final boolean value.
 - **Given**: The current temperature.  Assign the integer value `25` to a variable `temperature`.  But we need a boolean.  See below on how the `temperature` integer is converted to a boolean using a comparison operator.
+
 - **Given**: Definition of ice (frozen water).  Water becomes ice when the temperature is 32 degrees F. or less.  
 - **Given**: We know that the comparison operators produce a boolean, and the definition is a comparison of two values:  `temperature <= 32`. 
+```
+<= : integer, integer  -> boolean
+     temperature, 32   -> boolean
+     temperature <= 32 -> boolean
+```
 - **solution 1**: just assign the result of the comparison operation to the variable `isFrozen`
 - **solution 2**: use the `if` control structure to explicitly assign the boolean value to `isFrozen`, using the `<=` operation to obtain the boolean condition for the `if` control.
 
@@ -88,7 +101,7 @@ if (true){
    isFrozen = true; 
 ```
 
-### Comparing Implementation 1 and Implementation 2
+## Comparing Implementation 1 and Implementation 2
 
 The two implementations are equivalent, as they both produce the boolean value needed to determine the value of `isFrozen`.
 
@@ -110,7 +123,7 @@ Implentation 2:
    }
 ```
 
-In this case, the `if/else` construct was **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very usefule to solve more complex problems.
+In this case, the `if/else` construct semms **not** necessary as the final value is a boolean.  For other cases where the final result is not a boolean, the `if` or the `if/else` construct is very usefule to solve more complex problems.
 
 Finally to summarize the two expressions in a function notation, knowing that `32 F.` is a constant,  we can think of them similar to a function notation represented as
 
@@ -120,7 +133,7 @@ Finally to summarize the two expressions in a function notation, knowing that `3
 
 That is, the temperature `25` is the input, and the result is `true`.
 
-### Expressions in Functions
+## Expressions in Functions
 
 If you find that an expression can be reused, you can define it as a function (method).  For example, the solution in the previous exercise was captured as a boolean variable `isFrozen`.  We can also capture the above expression as a named function and apply it to more than just the temperature `25`.
 
@@ -161,6 +174,15 @@ boolean isFrozen(int temperature){
    } else {
       return false;
    }
+}
+</code></pre>
+or
+<pre><code>
+boolean isFrozen(int temperature){
+    if (temperature <= 32){
+        return true;
+    }
+    return false;
 }
 </code></pre>
 </details>
