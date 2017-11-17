@@ -54,9 +54,6 @@ func Header() string {
 	return header
 }
 
-func (f isPositive) String() string {
-	f.name
-}
 func runTests(tests []test) {
 	fmt.Println(Header())
 	for _, test := range tests {
