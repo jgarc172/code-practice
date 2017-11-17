@@ -13,9 +13,14 @@ func main() {
 	fmt.Println("value:", val)
 	fmt.Println("type:", typ)
 	fmt.Println("inputs:", inputs)
-	fmt.Printf("function: %v - %v", myFunc, val.Kind())
+	fmt.Printf("function: %v - %v \n", val, val.Kind())
+	fmt.Printf("aFunc type: %v \n", reflect.TypeOf(aFunc))
 }
 
 func myFunc(num int) int {
 	return 10
+}
+
+func aFunc() {
+
 }
