@@ -13,8 +13,8 @@ func main() {
 	fmt.Println("value:", val)
 	fmt.Println("type:", typ)
 	fmt.Println("inputs:", inputs)
-	fmt.Printf("function: %v - %v \n", val, val.Kind())
-	fmt.Printf("aFunc type: %v \n", reflect.TypeOf(aFunc))
+	fmt.Printf("function: %#v - %#v - %v \n", myFunc, val, val.Kind())
+	fmt.Printf("Func type: %v - %T \n", typ, aFunc)
 }
 
 func myFunc(num int) int {

@@ -18,7 +18,7 @@ import "fmt"
 		return isSummer || !isCold
 */
 func goSwim(isSummer bool, isCold bool) bool {
-	return isSummer || !isCold 
+	return isSummer || !isCold
 }
 
 func main() {
@@ -34,26 +34,13 @@ func main() {
 }
 
 type test struct {
-	isSummer     bool
-	isCold     bool
+	isSummer bool
+	isCold   bool
 	expected bool
 }
 
-func (t test) String() string {
-	name := "goSwim"
-	params := "%t, %t"
-	return name + "(" + params + ")  \t -> %t "
-}
-
-func Header() string {
-	header :=
-`goSwim(isSummer, isCold) -> bool
-----------------------------------`
-	return header
-}
-
 func runTests(tests []test) {
-	fmt.Println(Header())
+	fmt.Println(header())
 	for _, test := range tests {
 		result := goSwim(test.isSummer, test.isCold)
 		fmt.Println(testString(test, result))
@@ -61,17 +48,28 @@ func runTests(tests []test) {
 }
 
 func testString(t test, result bool) string {
-	//format := "goSwim(%t, %t)  \t -> %t "
-	format := t.String()
-	testStr := fmt.Sprintf(format, t.isSummer, t.isCold, result)
+	testStr := fmt.Sprintf(format(), t.isSummer, t.isCold, result)
 	okStr := okString(result, t.expected)
 	return testStr + okStr
 }
 
 func okString(result bool, expected bool) string {
 	if result == expected {
-		return  "\t (OK)"
-	} else {
-		return  fmt.Sprintf("\t (X) expected %t", expected)
+		return "\t (OK)"
 	}
+	return fmt.Sprintf("\t (X) expected %t", expected)
+}
+
+func header() string {
+	header :=
+		`goSwim(isSummer,isCold) -> bool
+----------------------------------`
+	return header
+}
+
+func format() string {
+	name := "goSwim"
+	in := "%t,%t"
+	out := "%t"
+	return name + "(" + in + ")\t -> " + out
 }

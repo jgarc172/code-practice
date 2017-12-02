@@ -41,32 +41,16 @@ type test struct {
 	expected bool
 }
 
-func (t test) String() string {
-	name := "isPositive"
-	params := "%d"
-	return name + "(" + params + ")\t -> %t "
-}
-
-func Header() string {
-	header :=
-		`isPositive(num) -> bool
------------------------`
-	return header
-}
-
 func runTests(tests []test) {
-	fmt.Println(Header())
+	fmt.Println(header())
 	for _, test := range tests {
 		result := isPositive(test.num)
-
 		fmt.Println(testString(test, result))
 	}
 }
 
 func testString(t test, result bool) string {
-	//format := "isPositive(%d)\t -> %t "
-	format := t.String()
-	testStr := fmt.Sprintf(format, t.num, result)
+	testStr := fmt.Sprintf(format(), t.num, result)
 	okStr := okString(result, t.expected)
 	return testStr + okStr
 }
@@ -74,7 +58,20 @@ func testString(t test, result bool) string {
 func okString(result bool, expected bool) string {
 	if result == expected {
 		return "\t (OK)"
-	} else {
-		return fmt.Sprintf("\t (X) expected %t", expected)
 	}
+	return fmt.Sprintf("\t (X) expected %t", expected)
+}
+
+func header() string {
+	header :=
+		`isPositive(num) -> bool
+-----------------------`
+	return header
+}
+
+func format() string {
+	name := "isPositive"
+	in := "%d"
+	out := "%t"
+	return name + "(" + in + ")\t -> " + out
 }

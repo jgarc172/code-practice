@@ -44,8 +44,7 @@ func testString(t test, result bool) string {
 
 func okString(result bool, expected bool) string {
 	if result == expected {
-		return  "\t (OK)"
-	} else {
-		return  fmt.Sprintf("\t (X) expected %t", expected)
+		return "\t (OK)"
 	}
+	return fmt.Sprintf("\t (X) expected %t", expected)
 }
