@@ -7,4 +7,4 @@ This section describes the minimum code to run your exercices.  It also introduc
 programming language basic types and the function notation to describe the exercises.
 
 ## Level 1
-This level provides you with fundamental exercises.
+This level provides you with fundamental exercises
